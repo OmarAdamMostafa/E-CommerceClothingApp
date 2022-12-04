@@ -1,8 +1,8 @@
-import angela_white_tshirt from './assets/ang-white_1024x1024_thumbnail.png'
-import dolce_gabana_dress from  './assets/P00633078_thumbnail.png'
-import red_hoodie from  './assets/red_hoodie.png'
-import grey_sweatpants from  './assets/grey_sweatpants_thumbnail.png'
-import blue_trousers from  './assets/blue_trousers_thumbnail.png'
+import angela_white_tshirt from './assets/Images/ang-white_1024x1024_thumbnail.png'
+import dolce_gabana_dress from  './assets/Images/P00633078_thumbnail.png'
+import red_hoodie from  './assets/Images/red_hoodie.png'
+import grey_sweatpants from  './assets/Images/grey_sweatpants_thumbnail.png'
+import blue_trousers from  './assets/Images/blue_trousers_thumbnail.png'
 
 export const sliderItems = [
     {

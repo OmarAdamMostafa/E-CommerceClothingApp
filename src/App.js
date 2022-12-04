@@ -6,7 +6,7 @@ import ProductsList from './pages/ProductsList';
 
 function App() {
   return (
-    <Cart/>
+    <Home/>
   );
 }
 

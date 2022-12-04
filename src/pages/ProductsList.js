@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Announcement from '../components/Announcement'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import Newsletter from '../components/Newsletter'
-import Products from '../components/Products'
+import {NavBar,Announcement,Products,Footer,Newsletter} from '../components'
 import {mobile} from '../responsive'
 
 const ProductsList = () => {

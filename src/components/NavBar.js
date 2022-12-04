@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {mobile} from '../responsive'
-
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { SearchIcon, ShoppingCartOutlinedIcon } from '../assets/Icons';
 import Badge from '@mui/material/Badge';
 
 const NavBar = () => {

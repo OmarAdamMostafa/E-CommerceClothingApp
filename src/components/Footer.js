@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import RoomIcon from '@mui/icons-material/Room';
-import PhoneIcon from '@mui/icons-material/Phone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { FacebookIcon, InstagramIcon, TwitterIcon, RoomIcon, PhoneIcon, MailOutlineIcon } from '../assets/Icons';
 import {mobile} from '../responsive';
 
 const Footer = () => {

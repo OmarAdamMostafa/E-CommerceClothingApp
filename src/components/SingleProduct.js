@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import { ShoppingCartOutlinedIcon, SearchOutlinedIcon, FavoriteBorderOutlinedIcon } from '../assets/Icons';
 
 const SingleProduct = ({product}) => {
   return (

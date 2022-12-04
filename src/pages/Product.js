@@ -1,11 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Announcement from '../components/Announcement'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import Newsletter from '../components/Newsletter'
-import RemoveIcon from '@mui/icons-material/Remove'
-import AddIcon from '@mui/icons-material/Add'
+import {NavBar,Announcement,Footer,Newsletter} from '../components'
+import { RemoveIcon, AddIcon } from '../assets/Icons';
 import {mobile} from '../responsive'
 
 const Product = () => {

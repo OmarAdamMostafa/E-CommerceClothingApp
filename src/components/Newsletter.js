@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SendIcon from '@mui/icons-material/Send'
+import { SendIcon } from '../assets/Icons';
 import {mobile} from '../responsive'
 
 const Newsletter = () => {

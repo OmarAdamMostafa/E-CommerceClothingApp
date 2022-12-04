@@ -1,10 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import Announcement from '../components/Announcement'
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
+import {NavBar,Announcement,Footer} from '../components'
+import { RemoveIcon, AddIcon } from '../assets/Icons';
 import {mobile} from '../responsive';
 
 const Cart = () => {

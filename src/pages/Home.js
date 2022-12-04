@@ -1,11 +1,5 @@
 import React from 'react'
-import Announcement from '../components/Announcement'
-import Categories from '../components/Categories'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import Newsletter from '../components/Newsletter'
-import Products from '../components/Products'
-import Slider from '../components/Slider'
+import {NavBar,Announcement,Categories, Products,Footer,Newsletter,Slider} from '../components'
 
 const Home = () => {
   return (

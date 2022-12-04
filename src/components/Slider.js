@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import { useState } from 'react';
 import { sliderItems } from '../data';
 import {mobile} from '../responsive';
-
-import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
-import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
+import { ArrowLeftOutlinedIcon, ArrowRightOutlinedIcon } from '../assets/Icons';
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
