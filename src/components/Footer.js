@@ -74,9 +74,7 @@ const Left = styled.div`
     flex-direction: column;
     padding: 20px;
 `
-const Logo = styled.h1`
-    
-`
+const Logo = styled.h1``
 const Description = styled.p`
     margin: 20px 0px;
 `
