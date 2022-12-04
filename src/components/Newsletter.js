@@ -57,7 +57,7 @@ const Button = styled.button`
     border: none;
     background-color: teal;
     color: white;
-    cursor: pointer;
+    cursor: pointer ;
 `
 
 export default Newsletter
