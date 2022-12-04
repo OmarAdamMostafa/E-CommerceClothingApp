@@ -1,4 +1,3 @@
-import { Remove } from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 import Announcement from '../components/Announcement'
@@ -73,7 +72,7 @@ const ImageContainer = styled.div`
 `
 const Image = styled.img`
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     object-fit: cover;
 `
 
