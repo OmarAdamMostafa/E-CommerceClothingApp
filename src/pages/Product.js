@@ -4,8 +4,9 @@ import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import Newsletter from '../components/Newsletter'
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove'
+import AddIcon from '@mui/icons-material/Add'
+import {mobile} from '../responsive'
 
 const Product = () => {
   return (
@@ -64,6 +65,11 @@ const Wrapper = styled.div`
     margin: 0px 15%;
     padding: 50px;
     display: flex;
+    ${mobile({
+        flexDirection: 'column',
+        padding: '10px',
+        margin: '0px'
+    })};
 `
 
 
@@ -74,12 +80,18 @@ const Image = styled.img`
     width: 100%;
     height: 65vh;
     object-fit: cover;
+    ${mobile({
+        height: '35vh',
+    })};
 `
 
 
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${mobile({
+        padding: '10px',
+    })};
 `
 const Title = styled.h1`
     font-weight: 200;
@@ -97,6 +109,9 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
+  ${mobile({
+    width: '100%',
+  })};
 `;
 
 const Filter = styled.div`
@@ -130,6 +145,9 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({
+    width: '100%',
+  })};
 `;
 
 const AmountContainer = styled.div`

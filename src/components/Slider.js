@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react';
 import { sliderItems } from '../data';
+import {mobile} from '../responsive';
 
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
@@ -51,6 +52,9 @@ const Container = styled.div`
     display: flex;
     position: relative; // Must be relative if the children are absolute
     overflow: hidden;
+    ${mobile({
+        display: 'none'
+    })};
 `
 
 const Arrow = styled.div`
@@ -86,7 +90,7 @@ const SlideContainer = styled.div`
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #${props => props.bg}
+    background-color: #${props => props.bg};
 `
 const ImageContainer = styled.div`
     height: 100%; 
