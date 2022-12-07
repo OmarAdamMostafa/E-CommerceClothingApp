@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import {NavBar,Announcement,Footer} from '../components'
+import {Announcement} from '../components'
 import { RemoveIcon, AddIcon } from '../assets/Icons';
 import {mobile} from '../responsive';
 
-const Cart = () => {
+const CartPage = () => {
   return (
     <Container>
-        <NavBar/>
         <Announcement/>
         <Wrapper>
             <Title>YOUR BAG</Title>
@@ -95,12 +94,13 @@ const Cart = () => {
                 </Summary>
             </Bottom>
         </Wrapper>
-        <Footer/>
     </Container>
   )
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  height: 100%;
+`;
 
 const Wrapper = styled.div`
   padding: 20px;
@@ -259,4 +259,4 @@ const Button = styled.button`
   font-weight: 600;
 `;
 
-export default Cart
+export default CartPage

@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import {NavBar,Announcement,Footer,Newsletter} from '../components'
+import {Announcement,Newsletter} from '../components'
 import { RemoveIcon, AddIcon } from '../assets/Icons';
 import {mobile} from '../responsive'
 
-const Product = () => {
+const ProductPage = () => {
   return (
     <Container>
-        <NavBar/>
         <Announcement/>
         <Wrapper>
             <ImageContainer>
@@ -50,12 +49,13 @@ const Product = () => {
             </InfoContainer>
         </Wrapper>
         <Newsletter/>
-        <Footer/>
     </Container>
   )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  height: 100%;
+`
 
 const Wrapper = styled.div`
     margin: 0px 15%;
@@ -175,4 +175,4 @@ const Button = styled.button`
   }
 `;
 
-export default Product
+export default ProductPage

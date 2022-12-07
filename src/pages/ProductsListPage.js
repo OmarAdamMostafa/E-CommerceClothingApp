@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import {NavBar,Announcement,Products,Footer,Newsletter} from '../components'
+import {Announcement,Products,Newsletter} from '../components'
 import {mobile} from '../responsive'
 
-const ProductsList = () => {
+const ProductsListPage = () => {
   return (
     <Container>
-        <NavBar/>
         <Announcement/>
         <Title>Products</Title>
         <FilterContainer>
@@ -41,14 +40,13 @@ const ProductsList = () => {
         </FilterContainer>
         <Products/>
         <Newsletter/>
-        <Footer/>
     </Container>
 
   )
 }
 
 const Container = styled.div`
-    height: 60px;
+    height: 100%;
 `
 
 const Title = styled.h1`
@@ -88,4 +86,4 @@ const Select = styled.select`
 
 const Option = styled.option``
 
-export default ProductsList
+export default ProductsListPage
