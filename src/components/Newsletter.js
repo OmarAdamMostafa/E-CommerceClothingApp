@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SendIcon } from '../assets/Icons';
-import {mobile} from '../responsive'
+import { mobile } from '../responsive'
 
 const Newsletter = () => {
   return (
     <Container>
         <Title>Newsletter</Title>
         <Description>Get timely updates from your favorite  products.</Description>
-        <InputContainer>
-            <Input placeholder='Your Email'/>
+        <InputContainer action='https://formspree.io/f/maykrbev' method='POST'>
+            <Input type='email' name='email' placeholder='Your Email'/>
             <Button>
                 <SendIcon/>
             </Button>
@@ -41,7 +41,7 @@ const Description = styled.div`
     })};
 `
 
-const InputContainer = styled.div`
+const InputContainer = styled.form`
     width: 50%;
     height: 40px;
     background-color: white;

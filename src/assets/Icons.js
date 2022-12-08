@@ -13,6 +13,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
+import CloseIcon from '@mui/icons-material/Close';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
 export {
     SearchIcon,
@@ -29,5 +31,7 @@ export {
     PhoneIcon,
     MailOutlineIcon,
     RemoveIcon,
-    AddIcon
+    AddIcon,
+    CloseIcon,
+    AccountCircleOutlinedIcon
 }

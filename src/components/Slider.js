@@ -4,9 +4,14 @@ import { useState } from 'react';
 import { sliderItems } from '../data';
 import {mobile} from '../responsive';
 import { ArrowLeftOutlinedIcon, ArrowRightOutlinedIcon } from '../assets/Icons';
+import DropDownMenu from './DropDownMenu';
+import { useDispatch,useSelector } from 'react-redux';
+import { changeMenuItemIndex } from '../features/NavBarFeature/NavBarSlice';
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
+    const dispatch = useDispatch()
+    const { menuItemIndex } = useSelector((store)=>store.navbar);
 
     const handleClick = (direction) =>{
         if (direction === "left") {
@@ -18,28 +23,41 @@ const Slider = () => {
 
   return (
     <Container>
-        <Arrow direction="left" onClick={()=>handleClick("left")}>
-            <ArrowLeftOutlinedIcon/>
-        </Arrow>
-        <Wrapper slideIndex={slideIndex}>
-            {
-                sliderItems.map((item)=>{
-                    return <SlideContainer key={item.id} bg={item.bg}>
-                                <ImageContainer>
-                                    <Image src={item.img}/>
-                                </ImageContainer>
-                                <InfoContainer>
-                                    <Title>{item.title}</Title>
-                                    <Description>{item.desc}</Description>
-                                    <Button>SHOP NOW</Button>
-                                </InfoContainer>
-                            </SlideContainer>  
-                })
-            }
-        </Wrapper>
-        <Arrow direction="right" onClick={()=>handleClick("right")}>
-            <ArrowRightOutlinedIcon/>
-        </Arrow>
+        {
+            menuItemIndex > 1 ? (
+                <DropDownSection show={true}>
+                    <DropDownMenu index={menuItemIndex}/>
+                </DropDownSection>
+            ) : (
+                <DropDownSection show={false}/>
+            )
+        }
+        <SliderSection onClick={()=>dispatch(changeMenuItemIndex(0))} onMouseEnter={()=>dispatch(changeMenuItemIndex(0))}>
+            <Arrow direction="left" onClick={()=>handleClick("left")}>
+                <ArrowLeftOutlinedIcon/>
+            </Arrow>
+            
+            <Wrapper slideIndex={slideIndex}>
+                {
+                    sliderItems.map((item)=>{
+                        return <SlideContainer key={item.id} bg={item.bg}>
+                                    <ImageContainer>
+                                        <Image src={item.img}/>
+                                    </ImageContainer>
+                                    <InfoContainer>
+                                        <Title>{item.title}</Title>
+                                        <Description>{item.desc}</Description>
+                                        <Button>SHOP NOW</Button>
+                                    </InfoContainer>
+                                </SlideContainer>  
+                    })
+                }
+            </Wrapper>
+
+            <Arrow direction="right" onClick={()=>handleClick("right")}>
+                <ArrowRightOutlinedIcon/>
+            </Arrow>
+        </SliderSection>
     </Container>
   )
 }
@@ -54,11 +72,24 @@ const Container = styled.div`
         display: 'none'
     })};
 `
+const SliderSection = styled.div`
+    z-index: 0;
+`
+const DropDownSection = styled.div`
+    width: 100%;
+    height: 30vh;
+    display: ${(props)=>props.show ? "flex" : "none"};
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    background-color: white;
+    z-index: 3;
+`
 
 const Arrow = styled.div`
     height: 50px;
     width: 50px;
-    background-color: #fff7f7;
+    background-color: #797a80;
     border-radius: 50%;
     display: flex;
     align-items: center;
