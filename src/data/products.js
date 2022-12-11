@@ -1,14 +1,12 @@
-// import shirt1black from '../assets/Clothes/Men/Top Wear/Shirts/shirt-1-black.png'
-// import shirt2black from '../assets/Clothes/Men/Top Wear/Shirts/shirt-2-black.png'
-// import shirt2white from '../assets/Clothes/Men/Top Wear/Shirts/shirt-2-white.png'
-// import shirt3blue from '../assets/Clothes/Men/Top Wear/Shirts/shirt-3-blue.png'
-// import shirt3green from '../assets/Clothes/Men/Top Wear/Shirts/shirt-3-green.png'
-// import shirt3pink from '../assets/Clothes/Men/Top Wear/Shirts/shirt-3-pink.png'
 import {shirt1black,shirt2black,shirt2white,shirt3blue,shirt3green,shirt3pink,tshirt1black,tshirt1white,tshirt1green,tshirt2blue,tshirt3pink,tshirt3red,hoodie1pink,
     hoodie2white,hoodie2black, hoodie2blue,hoodie2red,hoodie3gray,hoodie3green,hoodie3black,sweater1white,sweater2black,sweater2gray,sweater2blue,sweater3red,
-    suit1beige,suit1black,suit2black,suit3blue,suit3black,jacket1black,jacket2black,jacket3beige,jacket3black,jacket4black} from '../assets/Clothes'
+    suit1beige,suit1black,suit2black,suit3blue,suit3black,jacket1black,jacket2black,jacket3beige,jacket3black,jacket4black,jeans1beige,jeans1black,jeans1blue,jeans2black,
+    jeans3gray,jeans3blue,jeans4black,jeans4blue,jeans4gray,trousers1beige,trousers1black,trousers2black,trousers2blue,trousers3green,trousers3black,trousers4pink,trousers4black,
+    joggers1black,joggers1blue,joggers2beige,joggers3red,joggers3black,shorts1black,shorts1blue,shorts1gray,shorts2white,shorts2gray,shorts2beige,shorts3gray,shorts4blue} from '../assets/Clothes'
 
 export const products = [
+    //MEN'S TOP WEAR
+    //Shirts
     {
         id: 111,
         img: [ shirt1black ],
@@ -45,6 +43,7 @@ export const products = [
         color: [ "#0000FF", "#00FF00", "#FFC0CB" ],
         quantity: 9,
     },
+    //T-Shirts
     {
         id: 114,
         img: [ tshirt1green, tshirt1black, tshirt1white ],
@@ -81,6 +80,7 @@ export const products = [
         color: [ "#FFC0CB", "#FF0000" ],
         quantity: 3,
     },
+    //Hoodies
     {
         id: 117,
         img: [ hoodie1pink ],
@@ -117,6 +117,7 @@ export const products = [
         color: [ "#808080", "#00FF00", "#000000" ],
         quantity: 4,
     },
+    //Sweaters
     {
         id: 120,
         img: [ sweater1white ],
@@ -153,6 +154,7 @@ export const products = [
         color: [ "#FF0000" ],
         quantity: 3,
     },
+    //Suits
     {
         id: 123,
         img: [ suit1beige, suit1black ],
@@ -189,6 +191,7 @@ export const products = [
         color: [ "#0000FF", "#000000" ],
         quantity: 2,
     },
+    //Jackets
     {
         id: 126,
         img: [ jacket1black ],
@@ -236,6 +239,192 @@ export const products = [
         price: 299900,
         color: [ "#000000" ],
         quantity: 1,
+    },
+
+    //MEN'S BOTTOM WEAR
+    //Jeans
+    {
+        id: 130,
+        img: [ jeans1beige, jeans1black ],
+        gender: "M",
+        category: "jeans",
+        name: "STRAIGHT FIT JEANS",
+        desc: "Straight fit jeans with five pockets. Faded effect. Front button fastening.",
+        size: [ "M", "L" ],
+        price: 129900,
+        color: [ "#F5F5DC", "#000000" ],
+        quantity: 7,
+    },
+    {
+        id: 131,
+        img: [ jeans2black, jeans1blue ],
+        gender: "M",
+        category: "jeans",
+        name: "RELAXED FIT DENIM TROUSERS",
+        desc: "Relaxed fit trousers featuring front pockets, rear patch pockets and zip fly and top button fastening.",
+        size: [ "M", "L", "XL" ],
+        price: 169900,
+        color: [ "#000000", "#0000FF" ],
+        quantity: 10,
+    },
+    {
+        id: 132,
+        img: [ jeans3blue, jeans3gray ],
+        gender: "M",
+        category: "jeans",
+        name: "PREMIUM SLIM FIT JEANS",
+        desc: "Slim fit jeans. Five pockets. Faded effect. Front zip fly and button fastening.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 169900,
+        color: [ "#0000FF", "#808080" ],
+        quantity: 3,
+    },
+    {
+        id: 133,
+        img: [ jeans4gray, jeans4black, jeans4blue ],
+        gender: "M",
+        category: "jeans",
+        name: "TAPERED SKINNY JEANS",
+        desc: "Skinny jeans with five pockets. Faded effect. Cropped length. Front zip fly and button fastening.",
+        size: [ "M", "L" ],
+        price: 129900,
+        color: [ "#808080", "#000000", "#0000FF" ],
+        quantity: 3,
+    },
+    //Trousers
+    {
+        id: 134,
+        img: [ trousers1beige, trousers1black ],
+        gender: "M",
+        category: "trousers",
+        name: "SKINNY CHINO TROUSERS",
+        desc: "Skinny trousers with front pockets, rear welt pockets and zip fly and top button fastening.",
+        size: [ "S", "M", "L" ],
+        price: 99900,
+        color: [ "#808080", "#000000" ],
+        quantity: 4,
+    },
+    {
+        id: 135,
+        img: [ trousers2black, trousers2blue ],
+        gender: "M",
+        category: "trousers",
+        name: "BIRD’S-EYE SUIT TROUSERS",
+        desc: "Straight fit trousers with front pockets and rear welt pockets. Zip fly and button fastening.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 169900,
+        color: [ "#000000", "#0000FF" ],
+        quantity: 6,
+    },
+    {
+        id: 136,
+        img: [ trousers3green, trousers3black ],
+        gender: "M",
+        category: "trousers",
+        name: "CARPENTER TROUSERS WITH POCKET",
+        desc: "Trousers made of cotton. Front pockets and back patch pockets. Patch pockets on the legs. Zip fly and top button fastening.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 149900,
+        color: [ "#00FF00", "#000000" ],
+        quantity: 10,
+    },
+    {
+        id: 137,
+        img: [ trousers4pink, trousers4black ],
+        gender: "M",
+        category: "trousers",
+        name: "CARROT FIT CHINO TROUSERS",
+        desc: "Carrot fit trousers with front pockets and rear welt pockets. Zip fly and top button fastening.",
+        size: [ "M", "L", "XL" ],
+        price: 64900,
+        color: [ "#FFC0CB", "#000000" ],
+        quantity: 3,
+    },
+    //Joggers
+    {
+        id: 138,
+        img: [ joggers1black, joggers1blue ],
+        gender: "M",
+        category: "joggers",
+        name: "EASY CARE JOGGER WAIST TROUSERS",
+        desc: "Trousers featuring an adjustable elasticated waistband with drawstrings. Side pockets and rear welt pockets. Turn-up hems.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 109900,
+        color: [ "#000000", "#0000FF" ],
+        quantity: 6,
+    },
+    {
+        id: 139,
+        img: [ joggers2beige ],
+        gender: "M",
+        category: "joggers",
+        name: "SLIM FIT JOGGING TROUSERS",
+        desc: "Faded slim fit trousers featuring an elasticated waistband with adjustable drawstrings. Side pockets and rear welt pocket. Cuffed elasticated hems.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 109900,
+        color: [ "#F5F5DC" ],
+        quantity: 3,
+    },
+    {
+        id: 140,
+        img: [ joggers3red, joggers3black ],
+        gender: "M",
+        category: "joggers",
+        name: "PLEATED JOGGING TROUSERS",
+        desc: "Relaxed fit trousers featuring an elasticated waistband with adjustable drawstring, side pockets and rear pocket",
+        size: [ "S", "M", "L", "XL" ],
+        price: 149900,
+        color: [ "#FF0000", "#000000" ],
+        quantity: 5,
+    },
+    //Shorts
+    {
+        id: 141,
+        img: [ shorts1black, shorts1blue, shorts1gray ],
+        gender: "M",
+        category: "shorts",
+        name: "BASIC DENIM BERMUDA SHORTS",
+        desc: "Bermuda shorts with five pockets. Faded effect. Front zip fly and button fastening.",
+        size: [ "S", "M", "L" ],
+        price: 99900,
+        color: [ "#000000", "#0000FF", "#808080" ],
+        quantity: 6,
+    },
+    {
+        id: 142,
+        img: [ shorts2white, shorts2beige, shorts2gray ],
+        gender: "M",
+        category: "shorts",
+        name: "COMFORT BERMUDA SHORTS",
+        desc: "Bermuda shorts featuring an elastic drawstring waistband, front pockets and rear welt pockets.",
+        size: [ "S", "M", "L" ],
+        price: 99900,
+        color: [ "#FFFFFF", "#F5F5DC", "#808080" ],
+        quantity: 8,
+    },
+    {
+        id: 143,
+        img: [ shorts3gray ],
+        gender: "M",
+        category: "shorts",
+        name: "TEXTURED TERRY BERMUDA SHORTS",
+        desc: "Bermuda shorts featuring an elastic waistband with adjustable drawstrings, front pockets and rear patch pocket detail.",
+        size: [ "S", "M", "L", "XL" ],
+        price: 119900,
+        color: [ "#808080" ],
+        quantity: 4,
+    },
+    {
+        id: 144,
+        img: [ shorts4blue ],
+        gender: "M",
+        category: "shorts",
+        name: "SOFT DENIM BASIC BERMUDA SHORTS",
+        desc: "Bermuda shorts with an elastic waistband and drawstrings. Faded effect. Front pockets and back pocket detail.",
+        size: [ "S", "M", "L" ],
+        price: 109900,
+        color: [ "#0000FF" ],
+        quantity: 2,
     },
 ]
 

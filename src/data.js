@@ -128,7 +128,7 @@ export const menuItems = [
           },
           {
             id: 4,
-            text: "Sweatpants",
+            text: "Joggers",
             url: '/',
           }
         ]
@@ -467,7 +467,7 @@ export const menuItems = [
           },
           {
             id: 4,
-            text: "Sweatpants",
+            text: "Joggers",
             url: '/',
           }
         ]
