@@ -1,0 +1,4 @@
+Name:TEXTURED SWEATER
+Description: Long sleeve round neck sweater with ribbed trims.
+Sizes: M / L / XL
+Price: 1699 EGP

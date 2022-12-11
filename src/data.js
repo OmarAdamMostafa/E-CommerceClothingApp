@@ -4,6 +4,7 @@ import red_hoodie from  './assets/Images/red_hoodie.png'
 import grey_sweatpants from  './assets/Images/grey_sweatpants_thumbnail.png'
 import blue_trousers from  './assets/Images/blue_trousers_thumbnail.png'
 
+// SLIDER 
 export const sliderItems = [
   {
     id: 1,
@@ -28,6 +29,9 @@ export const sliderItems = [
   },
 ];
 
+
+
+// CATEGORIES
 export const categories = [
   {
     id: 1,
@@ -46,49 +50,9 @@ export const categories = [
   },
 ];
 
-export const popularProducts = [
-  {
-    id:1,
-    img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
-  },
-  {
-    id:2,
-    img: angela_white_tshirt,
-  },
-  {
-    id:3,
-    img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
-  },
-  {
-    id:4,
-    img: dolce_gabana_dress,
-  },
-  {
-    id:5,
-    img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
-  },
-  {
-    id:6,
-    img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
-  },
-  {
-    id:7,
-    img: red_hoodie,
-  },
-  {
-    id:8,
-    img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
-  },
-  {
-    id:9,
-    img: grey_sweatpants,
-  },
-  {
-    id:10,
-    img: blue_trousers,
-  },
-];
 
+
+// NAVBAR ITEMS
 export const menuItems = [
   {
     id:1,
@@ -137,12 +101,7 @@ export const menuItems = [
           },
           {
             id: 6,
-            text: "Coats",
-            url: '/',
-          },
-          {
-            id: 7,
-            text: "Scarfs",
+            text: "Hoodies",
             url: '/',
           },
         ]
@@ -747,3 +706,4 @@ export const menuItems = [
     ]
   },
 ];
+

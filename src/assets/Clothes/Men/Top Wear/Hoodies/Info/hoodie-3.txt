@@ -1,0 +1,4 @@
+Name: HOODIE
+Description: Loose-fitting hoodie with an adjustable hood and long sleeves. Featuring a front pouch pocket and ribbed trims.
+Sizes: S / M / L / XL / XXL
+Price: 1099 EGP

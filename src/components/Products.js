@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { popularProducts } from '../data'
+import { products } from '../data/products'
 import SingleProduct from './SingleProduct'
 
 const Products = () => {
   return (
     <Container>
         {
-            popularProducts.map((product)=>{
+            // popularProducts.map((product)=>{
+            //     return <SingleProduct key={product.id} product={product}/>
+            // })
+            products.map((product)=>{
                 return <SingleProduct key={product.id} product={product}/>
             })
         }

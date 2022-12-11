@@ -6,7 +6,7 @@ const SingleProduct = ({product}) => {
   return (
     <Container>
       <Circle/>
-      <Image src={product.img}/>
+      <Image src={product.img[0]}/>
       <InfoContainer>
         <Icon>
           <ShoppingCartOutlinedIcon/>
@@ -63,7 +63,7 @@ const Circle = styled.div`
 `
 
 const Image = styled.img`
-    height: 75%;
+    height: 125%;
     z-index: 2;
 `
 
